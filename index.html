@@ -1,0 +1,97 @@
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	</head>
+	<body></body>
+	<!-- ORG 260 -->
+	<script type='text/javascript'>
+		function initEmbeddedMessaging() {
+			try {
+				agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+	
+				agentforce_messaging.init(
+					'00DSG00000XveaP',
+					'CWC_Deployment',
+					'https://orgfarm-0e502dfd70.test1.my.pc-rnd.site.com/ESWCWCDeployment1756835771901',
+					{
+						scrt2URL: 'https://orgfarm-0e502dfd70.test1.my.pc-rnd.salesforce-scrt.com'
+					}
+				);
+			} catch (err) {
+				console.error('Error loading Embedded Messaging: ', err);
+			}
+		};
+	</script>
+	<script type='text/javascript' src='https://orgfarm-0e502dfd70.test1.my.pc-rnd.site.com/ESWCWCDeployment1756835771901/assets/js/init.js' onload='initEmbeddedMessaging()'></script>
+
+  <script type='text/javascript'>
+  	function initEmbeddedMessaging() {
+  		try {
+  			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+  
+  			embeddedservice_bootstrap.init(
+  				'00Dxx00EBzEBkq0',
+  				'MIAW_Chat',
+  				'https://orgfarm-043be681a1.my.site-com.f8qxboxam4v114flce8v0frrh1k4t.wa.crm.dev:6101/ESWMIAWChat1761254661086',
+  				{
+  					scrt2URL: 'http://orgfarm-043be681a1.my.salesforce-scrt-com.f8qxboxam4v114flce8v0frrh1k4t.wa.crm.dev'
+  				}
+  			);
+  		} catch (err) {
+  			console.error('Error loading Embedded Messaging: ', err);
+  		}
+  	};
+  </script>
+  <script type='text/javascript' src='https://orgfarm-043be681a1.my.site-com.f8qxboxam4v114flce8v0frrh1k4t.wa.crm.dev:6101/ESWMIAWChat1761254661086/assets/js/init.js' onload='initEmbeddedMessaging()'></script>
+
+  
+
+	<!-- Org 258 -->
+	<!--  <script type='text/javascript'>
+		function initEmbeddedMessaging() {
+			try {
+				agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+	
+				agentforce_messaging.init(
+					'00DSB00000YWxiz',
+					'CWC_deployment',
+					'https://orgfarm-3478916b10.test1.my.pc-rnd.site.com/ESWCWCdeployment1756837751707',
+					{
+						scrt2URL: 'https://orgfarm-3478916b10.test1.my.pc-rnd.salesforce-scrt.com'
+					}
+				);
+			} catch (err) {
+				console.error('Error loading Embedded Messaging: ', err);
+			}
+		};
+	</script>
+	<script type='text/javascript' src='https://orgfarm-3478916b10.test1.my.pc-rnd.site.com/ESWCWCdeployment1756837751707/assets/js/init.js' onload='initEmbeddedMessaging()'></script> -->
+	<!-- Local -->
+<!-- 	<script type='text/javascript'>
+		function initAgentforceMessaging() {
+			try {
+				agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+				agentforce_messaging.settings.devMode = true; 
+	
+				agentforce_messaging.init(
+					// '00DSG00000XOfTf',
+					// 'cwc_salesforce_2',
+					// 'https://orgfarm-a1bb371bc0.my.site-com.5b3rxtavzutk00abon60oigx81.wc.crm.dev:6101/ESWCWCDeployment1757013995406',
+					// {
+					// 	scrt2URL: 'https://orgfarm-0b9845e12f.test1.my.pc-rnd.salesforce-scrt.com'
+					// }
+					'00DSG00000XveaP',
+					'CWC_Deployment',
+					'https://orgfarm-a1bb371bc0.my.site-com.5b3rxtavzutk00abon60oigx81.wc.crm.dev:6101/ESWCWCDeployment1757013995406',
+					{
+						scrt2URL: 'https://orgfarm-0e502dfd70.test1.my.pc-rnd.salesforce-scrt.com'
+					}
+				);
+			} catch (err) {
+				console.error('Error loading Embedded Messaging: ', err);
+			}
+		};
+	</script>
+	<script type='text/javascript' src='https://orgfarm-a1bb371bc0.my.site-com.5b3rxtavzutk00abon60oigx81.wc.crm.dev:6101/ESWCWCDeployment1757013995406/assets/js/init.js' onload='initAgentforceMessaging()'></script> -->
+</html>
