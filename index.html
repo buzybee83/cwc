@@ -1,62 +1,252 @@
 
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-		<style type="text/css">
-			body {
-				font-size: 16px;
-			}
-		</style>
-	</head>
-	<body></body>
-	<!-- ORG 260 -->
-	<!-- <script type='text/javascript'>
-		function initEmbeddedMessaging() {
-			try {
-				agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-	
-				agentforce_messaging.init(
-					'00DSG00000XveaP',
-					'CWC_Deployment',
-					'https://orgfarm-0e502dfd70.test1.my.pc-rnd.site.com/ESWCWCDeployment1756835771901',
-					{
-						scrt2URL: 'https://orgfarm-0e502dfd70.test1.my.pc-rnd.salesforce-scrt.com'
-					}
-				);
-			} catch (err) {
-				console.error('Error loading Embedded Messaging: ', err);
-			}
-		};
-	</script>
-	<script type='text/javascript' src='https://orgfarm-0e502dfd70.test1.my.pc-rnd.site.com/ESWCWCDeployment1756835771901/assets/js/init.js' onload='initEmbeddedMessaging()'></script> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-	<script type='text/javascript'>
-		function initAgentforceMessaging() {
-			try {
-				agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-	
-				agentforce_messaging.init(
-					'00DVW000004eEuo',
-					'Food_Options_921',
-					// '00Dxx00727U4JnU',
-					// 'CWC_Deployment',
-					'https://orgfarm-2e3e0a476e.my.site-com.zfxk14ry6sib0ytlykwgtf6rm1nff.wa.crm.dev:6101/ESWCWCDeployment1761333788274',
-					{
-						scrt2URL: 'https://orgfarm-d58802e2eb.test1.my.pc-rnd.salesforce-scrt.com'
-					}
-					// '00Dxx00727U4JnU',
-					// 'CWC_Deployment',
-					// 'https://orgfarm-2e3e0a476e.my.site-com.zfxk14ry6sib0ytlykwgtf6rm1nff.wa.crm.dev:6101/ESWCWCDeployment1761333788274',
-					// {
-					// 	scrt2URL: 'https://orgfarm-2e3e0a476e.my.salesforce-scrt-com.zfxk14ry6sib0ytlykwgtf6rm1nff.wa.crm.dev'
-					// }
-				);
-			} catch (err) {
-				console.error('Error loading Embedded Messaging: ', err);
-			}
-		};
-	</script>
-	<script type='text/javascript' src='https://orgfarm-2e3e0a476e.my.site-com.zfxk14ry6sib0ytlykwgtf6rm1nff.wa.crm.dev:6101/ESWCWCDeployment1761333788274/assets/js/init.js' onload='initAgentforceMessaging()'></script>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            from { transform: translateY(0); }
+            to { transform: translateY(-100px); }
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            z-index: 1;
+            padding: 2rem;
+            max-width: 800px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 5rem 2rem;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+
+        .feature-title {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .feature-description {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Elegance</h1>
+            <p class="subtitle">Experience simplicity and beauty in perfect harmony</p>
+            <a href="#features" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-description">Optimized for speed and performance to deliver the best user experience possible.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3 class="feature-title">Beautiful Design</h3>
+                    <p class="feature-description">Carefully crafted with attention to detail and modern design principles.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Secure & Safe</h3>
+                    <p class="feature-description">Your data is protected with industry-leading security measures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Elegance. All rights reserved.</p>
+    </footer>
+</body>
+<script type='text/javascript'>
+	function initAgentforceMessaging() {
+		try {
+			agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			agentforce_messaging.init(
+				'00DVW000004eEuo',
+				'Food_Options_921',
+				'https://orgfarm-2e3e0a476e.my.site-com.zfxk14ry6sib0ytlykwgtf6rm1nff.wa.crm.dev:6101/ESWCWCDeployment1761333788274',
+				{
+					scrt2URL: 'https://orgfarm-d58802e2eb.test1.my.pc-rnd.salesforce-scrt.com'
+				}
+				// '00Dxx00727U4JnU',
+				// 'CWC_Deployment',
+				// 'https://orgfarm-2e3e0a476e.my.site-com.zfxk14ry6sib0ytlykwgtf6rm1nff.wa.crm.dev:6101/ESWCWCDeployment1761333788274',
+				// {
+				// 	scrt2URL: 'https://orgfarm-2e3e0a476e.my.salesforce-scrt-com.zfxk14ry6sib0ytlykwgtf6rm1nff.wa.crm.dev'
+				// }
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-2e3e0a476e.my.site-com.zfxk14ry6sib0ytlykwgtf6rm1nff.wa.crm.dev:6101/ESWCWCDeployment1761333788274/assets/js/init.js' onload='initAgentforceMessaging()'></script>
 
 	<!-- Org 258 -->
 	<!--  <script type='text/javascript'>
