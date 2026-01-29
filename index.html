@@ -224,25 +224,25 @@
 	</body>
 	<!-- LOCAL/WS -->
 	<script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-			agentforce_messaging.settings.devMode = true;
-
-			agentforce_messaging.init(
-				'00Dxx00c4PwZ5bQ',
-				'CWC',
-				'https://orgfarm-0199463627.my.site-com.f26ej5susp810x6gz6q8j6yox.wc.crm.dev:6101/ESWCWC1769721108388',
-				{
-					scrt2URL: 'https://orgfarm-a504d7a61b.test1.my.pc-rnd.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-</script>
-<script type='text/javascript' src='https://orgfarm-0199463627.my.site-com.f26ej5susp810x6gz6q8j6yox.wc.crm.dev:6101/ESWCWC1769721108388/assets/js/init.js' onload='initEmbeddedMessaging()'></script>
+		function initEmbeddedMessaging() {
+			try {
+				agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+				agentforce_messaging.settings.devMode = true;
+	
+				agentforce_messaging.init(
+					'00Dxx00c4PwZ5bQ',
+					'CWC',
+					'https://orgfarm-0199463627.my.site-com.f26ej5susp810x6gz6q8j6yox.wc.crm.dev:6101/ESWCWC1769721108388',
+					{
+						scrt2URL: 'https://orgfarm-a504d7a61b.test1.my.pc-rnd.salesforce-scrt.com'
+					}
+				);
+			} catch (err) {
+				console.error('Error loading Embedded Messaging: ', err);
+			}
+		};
+	</script>
+	<script type='text/javascript' src='https://orgfarm-0199463627.my.site-com.f26ej5susp810x6gz6q8j6yox.wc.crm.dev:6101/ESWCWC1769721108388/assets/js/init.js' onload='initEmbeddedMessaging()'></script>
 	<!-- END LOCAL -->
 	<!-- STM ORG 260 -->
 	<!-- <script type='text/javascript'>
