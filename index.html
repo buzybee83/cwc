@@ -226,10 +226,14 @@
 	<script type='text/javascript'>
 		function initEmbeddedMessaging() {
 			try {
-				agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-				agentforce_messaging.settings.devMode = true;
+				// agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+				// agentforce_messaging.settings.devMode = true;
 	
-				agentforce_messaging.init(
+				// agentforce_messaging.init(
+				embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+				embeddedservice_bootstrap.settings.devMode = true;
+	
+				embeddedservice_bootstrap.init(
 					'00DSG00000WuEp3',  // <-- STM Org
 					'MIAW_1',  // <-- STM Org
 					'https://orgfarm-402b685f1c.my.site-com.uw2wpxn5sf2x1l28m41t0sot61c226v.wb.crm.dev:6101/ESWCWC1770751598396',  // <-- LOCAL Org
